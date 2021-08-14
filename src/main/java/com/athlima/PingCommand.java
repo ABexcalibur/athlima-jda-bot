@@ -1,3 +1,5 @@
+package com.athlima;
+
 import net.dv8tion.jda.api.JDA;
 
 public class PingCommand implements ICommand {
