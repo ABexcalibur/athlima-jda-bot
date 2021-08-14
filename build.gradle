@@ -1,0 +1,34 @@
+plugins {
+    id'java'
+    id'application'
+}
+
+version '1.0'
+group 'com.athlima'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://m2.dv8tion.net/releases'
+    }
+    maven {
+        name 'duncte123-jfrog'
+        url 'https://duncte123.jfrog.io/artifactory/maven'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'com.sedmelluq:lavaplayer:1.3.77'
+    implementation("net.dv8tion:JDA:4.3.0_277")
+    implementation group: 'me.duncte123', name: 'botCommons', version: '2.3.8'
+    implementation group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.1'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.1.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
