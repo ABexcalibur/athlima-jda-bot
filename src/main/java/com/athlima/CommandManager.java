@@ -16,6 +16,7 @@ public class CommandManager {
         addCommand(new JoinCommand());
         addCommand(new PlayCommand());
         addCommand(new HelpCommand());
+        addCommand(new DisconnectCommand());
     }
     private void addCommand(ICommand cmd) {
         boolean commandName = this.commands.stream().anyMatch((it -> it.getName().equalsIgnoreCase(cmd.getName())));
