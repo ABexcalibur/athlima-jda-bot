@@ -20,7 +20,7 @@ public class AthJdaBot {
                         CacheFlag.ACTIVITY,
                         CacheFlag.EMOTE
                 )).enableCache(CacheFlag.VOICE_STATE).addEventListeners(new Listener())
-                .setActivity(Activity.playing("Bangers"))
+                .setActivity(Activity.watching(" over the Athlima Official Server"))
                 .build();
     }
 }

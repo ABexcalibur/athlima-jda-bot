@@ -15,6 +15,7 @@ public class CommandManager {
         addCommand(new MemeCommand());
         addCommand(new JoinCommand());
         addCommand(new PlayCommand());
+        addCommand(new HelpCommand());
     }
     private void addCommand(ICommand cmd) {
         boolean commandName = this.commands.stream().anyMatch((it -> it.getName().equalsIgnoreCase(cmd.getName())));
